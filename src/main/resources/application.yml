@@ -1,0 +1,19 @@
+quarkus:
+  application:
+    name: keycloak-spi-adapter
+kafka:
+  bootstrap:
+    servers: ${KAFKA_BOOTSTRAP_SERVER:localhost}:9092
+greeting:
+  message: "hello"
+mp:
+  messaging:
+    outgoing:
+      words-out:
+        topic: "words"
+    incoming:
+      words-in:
+        auto:
+          offset:
+            reset: "earliest"
+        topic: "words"
