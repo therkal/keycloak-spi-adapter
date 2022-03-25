@@ -1,0 +1,4 @@
+io/kennethmartens/keycloak/KeycloakEventListener.class
+io/kennethmartens/messaging/serializer/JsonPOJOSerializer.class
+io/kennethmartens/messaging/Producer.class
+io/kennethmartens/keycloak/KeycloakEventListenerFactory.class
