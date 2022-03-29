@@ -22,7 +22,7 @@ public class Producer {
 
         // create a producer record
         ProducerRecord<String, Event> eventRecord =
-                new ProducerRecord<>("KEYCLOAK_" + topic, event);
+                new ProducerRecord<>(("KEYCLOAK_" + topic).toLowerCase(), event);
 
         // send data - asynchronous
         producer.send(eventRecord);
